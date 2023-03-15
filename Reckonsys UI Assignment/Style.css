@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+   
+}
+body{
+    background-color: #dde7ec;
+}
+.sidebar{
+    background-color: white;
+    max-width: 226px;
+   
+    border-radius: 10px;
+}
+.sidebar_links{
+    padding: 0.33rem;
+    font-size: 1.7vh;
+    font-weight: 400;
+    text-align: start;
+    
+}
+.dash{
+    font-weight: 600;
+    display: inline;
+}
+a{
+    text-decoration: none;
+    color: black;
+    margin-left: 1rem;
+    
+}
+.sidebar_links:hover{
+    background-color: #5263D6;
+    
+}
