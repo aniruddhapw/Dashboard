@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700;900&display=swap');
 *{
     margin: 0;
     box-sizing: border-box;
@@ -12,15 +12,25 @@ body{
 .sidebar{
     background-color: white;
     max-width: 226px;
-   float: left;
+    height: 100%;
+    overflow-y: auto;
+    
+    scroll-behavior: smooth;
+    /* position: sticky; */
+    /* height: 100vh; */
     border-radius: 10px;
     display: inline-block;
+    float: left;
     
     
 }
+::-webkit-scrollbar {
+    width: 0px;
+  }
 .sidebar_links{
     padding: 8.5px;
-    font-size: 1.7vh;
+    font-size: 15px;
+    line-height: 18px;
     font-weight: 400;
     text-align: start;
     
@@ -32,6 +42,11 @@ body{
 .dash{
     font-weight: 600;
     display: inline;
+    margin-left: 12px;
+    font-weight: 600;
+font-size: 18px;
+line-height: 22px;
+color: #424344;
   
 }
 
@@ -41,11 +56,20 @@ body{
 } */
 .dash_front_logo{
     margin-top: 3px;
-    margin-bottom: 3px;
+    margin-bottom: 0px;
+}
+.heading_icon{
+    display: inline-block;
+    margin-left: 50px;
+}
+.heading_icon>img{
+    margin-left: 10px;
 }
 a{
     text-decoration: none;
-    color: black;
+    color: #707070;
+    font-weight: 400;
+    font-size: 15px;
     margin-left: 1rem;
     
     
@@ -78,11 +102,16 @@ margin-top: 162px;
 .mainContent{
 display: inline-block;
 margin-left: 39px;
+margin-right: 40px;
+width: calc(100% - 320px);
+overflow-y: auto;
+height: 100%;
 /* width: 100vh; */
 }
 .main1{
     display: inline-block;
     margin-top: 33px;
+    width: 100%;
     /* margin-left: 39px; */
   
 }
@@ -113,10 +142,19 @@ display: inline-block;
   }
 .search_bar{
 display: inline-block;
-margin-left: 100vh;
-margin-bottom: 22px;
+float: right;
+margin-left: 110%;
+margin-bottom: 0px;
+margin-top: -41px;
 }
 .search_bar>.input-with-button>input{
+    font-weight: 400;
+font-size: 15px;
+line-height: 18px;
+
+/* Grey/Dark */
+
+color: #424344;
     border: none;
         padding: 8px;
         height: 42px;
@@ -135,6 +173,13 @@ margin-bottom: 22px;
   
   .input-with-button button {
     background: #E3E6FE;
+    font-weight: 400;
+font-size: 15px;
+line-height: 18px;
+
+/* Grey/Light */
+
+color: #707070;
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 border-radius: 4px;
 border: none;
@@ -148,8 +193,11 @@ padding: 4px;
 
 .quick_actions{
 background-color: white;
-margin-top: 10px;
+margin-top: 36px;
 border-radius: 8px;
+width: auto;
+
+
 height: fit-content;
 padding: 16px;
 
@@ -159,9 +207,7 @@ padding: 16px;
     font-weight: 600;
     font-size: 18px;
     line-height: 22px;
-    /* identical to box height */
-
-    /* Grey/Dark */
+    
 
     color: #424344;
   }
@@ -201,7 +247,8 @@ margin-top: 14px;
 padding: 16px;
 display: inline-block;
 margin-right: 22px;
-width: 271.67px;
+width: 28%;
+max-width: 271.67px;
 height: 130px;
 
 background: #FFFFFF;
@@ -235,10 +282,7 @@ border-radius: 10px;
     font-weight: 400;
     font-size: 14px;
     line-height: 17px;
-    /* identical to box height */
     
-    
-    /* Grey/Light */
     
     color: #707070;
 }
@@ -296,10 +340,27 @@ margin-top: 28px;
 margin-right: 12px;
 max-width: 97px;
 display: inline-block;
+
 }
 .member_img{
 padding-left: 12px;
+display: inline-block;
+
+
 }
+/* .online{
+    width: 15px;
+    height: 15px;
+    border-radius:10px ;
+    background-color:  #44B949;
+    display: inline-block;
+    position: fixed;
+    
+    top: 550px;
+    left: 464px;
+    
+
+} */
 .member_circle{
     background: #E4E4E4;
     width: 70px;
@@ -351,6 +412,7 @@ color: #707070;
 /* main 4 */
 .main4{
 margin-top: 19px;
+margin-bottom: 43px;
 }
 .textL2{
     display: block;
@@ -377,9 +439,10 @@ margin-top: 19px;
 margin-right: 8px;
 }
 .tasks{
-margin-top: 24px;
+margin-top: 18px;
 }
 .task{
+    margin-top: 6px;
 background-color: white;
 padding-top: 12px;
 padding-bottom: 12px;
@@ -391,7 +454,7 @@ height: auto;
     display: inline-block;
     font-family: 'Inter';
 font-style: normal;
-font-weight: 700;
+font-weight: 500;
 font-size: 15px;
 line-height: 18px;
 
@@ -435,7 +498,6 @@ margin-right: 8px;
 }
 .three_dots{
 display: inline-block;
-margin-right: 10px;
+margin-right: 18px;
 margin-left: 8px;
 }
-

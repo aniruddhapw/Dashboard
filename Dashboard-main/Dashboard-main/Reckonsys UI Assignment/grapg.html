@@ -1,0 +1,99 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+        }
+    .main{
+       
+
+    }
+    .column{
+        display: inline-block;
+        width: 500px;
+        height: 500px;
+    }
+    .bar_graph{
+        margin-left: 30px;
+        background-color: green;
+    }
+    .bar1{
+        position: absolute;
+        width: 10px;
+        top: 95px;
+        height: 100px;
+        background-color: green;
+    }
+    .bar2{
+        position: absolute;
+        width: 10px;
+        top: 75px;
+        left: 50px;
+        height: 120px;
+        background-color: green;
+    }
+    .y_axis{
+/* background-color: blue; */
+border-right:2px ;
+        border-style: solid;
+        border-bottom:none ;
+        border-left: none;
+        border-top: none;
+display: inline-block;
+    }
+    .y_axis>p{
+        margin-top: 25px;
+    }
+    .x_axis{
+       
+        border-top:2px ;
+        border-style: solid;
+        border-bottom:none ;
+        border-left: none;
+        border-right: none;
+        display: inline-block;
+        margin-top: 100px;
+        padding-bottom:10px ;
+        /* background-color: blue; */
+    }
+    .x_axis>p{
+        display: inline-block;
+        margin-left: 15px;
+    }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="y_axis">
+           <p>$50k</p>
+           <p>$30k</p>
+           <p>$20k</p>
+           <p>$10k</p>
+           <p>$0k</p>
+        </div>
+        <div class="column">
+            <div class="bar_graph">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+             </div>
+             <div class="x_axis">
+                <p>11/01</p>
+                <p>11/01</p>
+                <p>11/01</p>
+                <p>11/01</p>
+                <p>11/01</p>
+                <p>11/01</p>
+                <p>11/01</p>
+                <p>11/01</p>
+             </div>
+        </div>
+        
+
+    </div>
+</body>
+</html>
